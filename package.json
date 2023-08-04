@@ -1,13 +1,18 @@
 {
   "name": "react-helpers",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "files": [
+    "dist"
+  ],
+  "types": "dist/index.d.ts",
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "rollup": "rollup -c"
   },
   "repository": {
     "type": "git",
@@ -21,5 +26,18 @@
   "bugs": {
     "url": "https://github.com/RouxtAccess/react-helpers/issues"
   },
-  "homepage": "https://github.com/RouxtAccess/react-helpers#readme"
+  "homepage": "https://github.com/RouxtAccess/react-helpers#readme",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.3",
+    "@rollup/plugin-node-resolve": "^15.1.0",
+    "@rollup/plugin-typescript": "^11.1.2",
+    "@types/react": "^18.2.18",
+    "react": "^18.2.0",
+    "rollup": "^3.27.2",
+    "rollup-plugin-dts": "^5.3.1",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "tslib": "^2.6.1"
+  }
 }
